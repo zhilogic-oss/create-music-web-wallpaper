@@ -1,0 +1,18 @@
+{
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "volume": {
+        "order": 1,
+        "text": "Volume",
+        "type": "slider",
+        "value": 80,
+        "min": 0,
+        "max": 100
+      }
+    }
+  },
+  "title": "{{TITLE}}",
+  "type": "web",
+  "version": 1
+}

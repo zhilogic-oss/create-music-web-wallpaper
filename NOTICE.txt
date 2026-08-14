@@ -1,0 +1,19 @@
+create-music-web-wallpaper
+Copyright 2026 双料贝斯手长崎素世
+Contact: 2932821663@qq.com
+
+This product includes a generic music Web-wallpaper starter and supporting
+workflow materials created for the create-music-web-wallpaper Agent Skill.
+
+The Skill icon was created with OpenAI image-generation tooling for this Work.
+
+Wallpapers made from the bundled starter should retain a discreet, readable
+tool credit in their About, Credits, or Material Sources view. This notice does
+not make the skill creator the author of wallpapers created by other users.
+
+The OriginalCube wallpaper referenced by this Skill is an interface and
+interaction inspiration only. No OriginalCube code or media is included in
+this licensed Work.
+
+Third-party music, lyrics, artwork, logos, fonts, trademarks, and other
+materials are not covered by this license unless explicitly stated.

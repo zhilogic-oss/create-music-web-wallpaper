@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true"></div>
+  <main class="wallpaper-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Music Web Wallpaper</p>
+        <h1 id="wallpaperTitle">{{TITLE}}</h1>
+      </div>
+      <div class="top-actions">
+        <button id="themeButton" class="quiet-button" type="button">Theme</button>
+        <button id="creditsButton" class="quiet-button" type="button">Credits</button>
+      </div>
+    </header>
+
+    <section class="workspace" aria-label="Music player">
+      <article class="cover-panel">
+        <img id="cover" src="assets/covers/placeholder.svg" alt="Current album cover">
+        <div class="now-playing">
+          <p id="artist">Add authorized music to the catalog</p>
+          <h2 id="trackTitle">Your first track</h2>
+          <p id="album">Starter collection</p>
+        </div>
+      </article>
+
+      <article class="lyrics-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Lyrics</p>
+            <h2>Now playing</h2>
+          </div>
+        </div>
+        <div id="lyrics" class="lyrics" aria-live="polite">
+          <p class="lyric-line active">Add an LRC file to display synchronized lyrics.</p>
+        </div>
+      </article>
+
+      <aside class="playlist-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Library</p>
+            <h2>Albums &amp; tracks</h2>
+          </div>
+        </div>
+        <div id="albumFilters" class="album-filters"></div>
+        <ol id="trackList" class="track-list">
+          <li class="empty-state">Edit <code>static/js/catalog.js</code> to add music.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="transport" aria-label="Playback controls">
+      <span id="currentTime">0:00</span>
+      <input id="progress" type="range" min="0" max="1000" value="0" aria-label="Playback position">
+      <span id="duration">0:00</span>
+      <div class="transport-buttons">
+        <button id="previousButton" type="button" aria-label="Previous track">Previous</button>
+        <button id="playButton" class="primary-button" type="button" aria-label="Play">Play</button>
+        <button id="nextButton" type="button" aria-label="Next track">Next</button>
+      </div>
+      <label class="volume-control">Volume <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8"></label>
+    </section>
+  </main>
+
+  <dialog id="creditsDialog" class="credits-dialog">
+    <form method="dialog" class="dialog-heading">
+      <div>
+        <p class="eyebrow">About this wallpaper</p>
+        <h2>Credits &amp; material sources</h2>
+      </div>
+      <button class="quiet-button" value="close">Close</button>
+    </form>
+    <div class="credit-block">
+      <p><strong>Wallpaper author:</strong> {{AUTHOR}}</p>
+      <p>Inspired by <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2905017768">OriginalCube's Bocchi the Rock! album-player wallpaper</a>.</p>
+      <p class="skill-credit">Created with the <code>create-music-web-wallpaper</code> Agent Skill by 双料贝斯手长崎素世 (2932821663@qq.com).</p>
+    </div>
+    <div>
+      <h3>Materials</h3>
+      <div id="materialCredits" class="material-credits"></div>
+    </div>
+    <p class="legal-note">Attribution does not replace a license. Music, lyrics, artwork, logos, fonts, and trademarks remain the property of their respective rights holders.</p>
+  </dialog>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="static/js/catalog.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+</html>

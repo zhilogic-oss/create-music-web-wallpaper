@@ -1,0 +1,11 @@
+This wallpaper includes starter code from create-music-web-wallpaper.
+Copyright 2026 双料贝斯手长崎素世
+Contact: 2932821663@qq.com
+
+The starter code is licensed under the Apache License, Version 2.0.
+The person who creates and publishes this wallpaper remains its wallpaper
+author. Retain the discreet tool credit in the About, Credits, or Material
+Sources view when distributing a wallpaper based on the starter.
+
+Third-party music, lyrics, artwork, logos, fonts, trademarks, and other
+materials are not covered by the starter code license unless explicitly stated.
